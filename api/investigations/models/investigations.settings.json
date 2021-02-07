@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "investigations",
+  "info": {
+    "name": "Investigations"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Case_Number": {
+      "type": "string"
+    },
+    "Article": {
+      "type": "string"
+    },
+    "Interrogation": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Information_Case": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Evidence": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Date": {
+      "type": "datetime"
+    },
+    "Investigator_Name": {
+      "type": "string"
+    }
+  }
+}

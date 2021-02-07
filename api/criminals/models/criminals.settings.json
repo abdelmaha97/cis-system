@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "criminals",
+  "info": {
+    "name": "Criminals"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Criminal_Name": {
+      "type": "string"
+    },
+    "Criminal_Age": {
+      "type": "string"
+    },
+    "Image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Criminal_Address": {
+      "type": "string"
+    },
+    "Case_Number": {
+      "type": "string"
+    },
+    "Article": {
+      "type": "string"
+    },
+    "Details": {
+      "type": "string"
+    }
+  }
+}

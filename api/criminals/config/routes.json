@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/criminals",
+      "handler": "criminals.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/criminals/count",
+      "handler": "criminals.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/criminals/:id",
+      "handler": "criminals.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/criminals",
+      "handler": "criminals.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/criminals/:id",
+      "handler": "criminals.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/criminals/:id",
+      "handler": "criminals.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/case-results",
+      "handler": "case-results.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/case-results/count",
+      "handler": "case-results.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/case-results/:id",
+      "handler": "case-results.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/case-results",
+      "handler": "case-results.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/case-results/:id",
+      "handler": "case-results.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/case-results/:id",
+      "handler": "case-results.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

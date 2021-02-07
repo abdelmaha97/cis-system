@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "civil_registers",
+  "info": {
+    "name": "CivilRegistires",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "DateBirth": {
+      "type": "date"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "Phone_Number": {
+      "type": "string"
+    },
+    "Occupation": {
+      "type": "string"
+    },
+    "BloodType": {
+      "type": "string"
+    },
+    "Criminal_Record": {
+      "type": "string"
+    }
+  }
+}

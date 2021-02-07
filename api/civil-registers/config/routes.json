@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/civil-registers",
+      "handler": "civil-registers.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/civil-registers/count",
+      "handler": "civil-registers.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/civil-registers/:id",
+      "handler": "civil-registers.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/civil-registers",
+      "handler": "civil-registers.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/civil-registers/:id",
+      "handler": "civil-registers.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/civil-registers/:id",
+      "handler": "civil-registers.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

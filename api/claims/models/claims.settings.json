@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "claims",
+  "info": {
+    "name": "Claims"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "ClimentName": {
+      "type": "string"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "ClimentAddress": {
+      "type": "string"
+    },
+    "CaseDate": {
+      "type": "string"
+    },
+    "CaseType": {
+      "type": "string"
+    },
+    "LocationCase": {
+      "type": "string"
+    },
+    "SuspectName": {
+      "type": "string"
+    },
+    "SuspectAddress": {
+      "type": "string"
+    },
+    "Details": {
+      "type": "string"
+    }
+  }
+}

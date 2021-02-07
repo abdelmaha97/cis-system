@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "case_results",
+  "info": {
+    "name": "CaseResults"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Case_Number": {
+      "type": "string"
+    },
+    "Article": {
+      "type": "string"
+    },
+    "Cirminal_Name": {
+      "type": "string"
+    },
+    "Cirminal_Address": {
+      "type": "string"
+    },
+    "Case_Report": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Date": {
+      "type": "datetime"
+    },
+    "Investigation_Name": {
+      "type": "string"
+    }
+  }
+}
