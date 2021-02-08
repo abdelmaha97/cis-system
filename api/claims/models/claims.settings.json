@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "claims",
   "info": {
-    "name": "Claims"
+    "name": "Claims",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -35,6 +36,16 @@
       "type": "string"
     },
     "Details": {
+      "type": "string"
+    },
+    "Case_Status": {
+      "type": "enumeration",
+      "enum": [
+        "Pading",
+        "Colsed"
+      ]
+    },
+    "Investigator_Name": {
       "type": "string"
     }
   }
